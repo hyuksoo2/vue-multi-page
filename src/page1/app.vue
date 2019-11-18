@@ -6,7 +6,7 @@
     </main>
 
     <div id="nav">
-      <a href="/page2">Page2 App</a><br>
+      <a href="/page2.html">Page2 App</a><br>
       <router-link to="home">Page1 App Home</router-link><br>
       <router-link to="posts">Page1 App Posts</router-link>
   </div>

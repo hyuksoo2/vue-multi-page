@@ -4,11 +4,23 @@
       <h1>Page2 Main Page</h1>
     </main>
     <div id="nav">
-      <a href="/page1/">Page1</a>
+      <a href="/page1.html/">Page1</a>
     </div>
   </div>
 </template>
 
+<script>
+import { mapState} from 'vuex';
+
+export default {
+	mounted() {
+		setTimeout(() => {
+			this.$store.commit('SET_TEST_STATE2', ['test1, test2']);
+		}, 100);
+	}
+}
+
+</script>
 
 <style lang="postcss">
 #app {

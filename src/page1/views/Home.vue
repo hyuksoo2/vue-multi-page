@@ -6,11 +6,17 @@
 
 <script>
 import HelloWorld from '@/page1/components/HelloWorld.vue';
+import { mapState} from 'vuex';
 
 export default {
 	components: {
 		HelloWorld
 	},
-};
+	mounted() {
+		setTimeout(() => {
+			this.$store.commit('SET_TEST_STATE1', '1');
+		}, 100);
+	}
+}
 
 </script>
